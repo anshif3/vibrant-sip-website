@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // JandJ Foods Brand Colors
+        orange: {
+          DEFAULT: "hsl(var(--orange))",
+          light: "hsl(var(--orange-light))",
+        },
+        green: {
+          DEFAULT: "hsl(var(--green))",
+          light: "hsl(var(--green-light))",
+        },
+        yellow: "hsl(var(--yellow))",
+        red: "hsl(var(--red))",
+        cream: "hsl(var(--cream))",
       },
       borderRadius: {
         lg: "var(--radius)",
