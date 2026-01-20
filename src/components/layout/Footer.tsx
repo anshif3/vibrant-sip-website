@@ -62,7 +62,6 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4">Business</h4>
             <ul className="space-y-2">
               {[
-                { name: "Packaging Options", path: "/packaging" },
                 { name: "Become a Distributor", path: "/distributors" },
                 { name: "Bulk Orders", path: "/distributors" },
                 { name: "Contact Us", path: "/contact" },
