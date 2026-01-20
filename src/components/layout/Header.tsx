@@ -83,32 +83,29 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div
-          className={cn(
-            "lg:hidden overflow-hidden transition-all duration-300",
-            isMobileMenuOpen ? "max-h-96 mt-4" : "max-h-0"
-          )}
-        >
-          <nav className="flex flex-col gap-2 pb-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={cn(
-                  "px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200",
-                  location.pathname === link.path
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground/80 hover:text-foreground hover:bg-muted"
-                )}
-              >
-                {link.name}
-              </Link>
-            ))}
-            <Button asChild className="rounded-lg mt-2">
-              <Link to="/distributors#bulk-order">Contact Us</Link>
-            </Button>
-          </nav>
-        </div>
+        {isMobileMenuOpen && (
+          <div className="lg:hidden mt-4 bg-background rounded-lg border shadow-lg p-4">
+            <nav className="flex flex-col gap-2">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={cn(
+                    "px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200",
+                    location.pathname === link.path
+                      ? "bg-primary text-primary-foreground"
+                      : "text-foreground/80 hover:text-foreground hover:bg-muted"
+                  )}
+                >
+                  {link.name}
+                </Link>
+              ))}
+              <Button asChild className="rounded-lg mt-2">
+                <Link to="/distributors#bulk-order">Contact Us</Link>
+              </Button>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
