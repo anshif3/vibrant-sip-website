@@ -38,7 +38,7 @@ const Home = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full px-8 text-lg">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/distributors#bulk-order">Contact Us</Link>
               </Button>
             </div>
           </div>
