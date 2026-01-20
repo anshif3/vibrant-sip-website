@@ -134,14 +134,9 @@ const Home = () => {
             Whether you're a retailer, distributor, or looking for bulk orders, 
             we'd love to work with you. Let's grow together!
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button asChild variant="secondary" size="lg" className="rounded-full px-8">
-              <Link to="/distributors">Become a Distributor</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="rounded-full px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <Link to="/contact">Get in Touch</Link>
-            </Button>
-          </div>
+          <Button asChild variant="secondary" size="lg" className="rounded-full px-8">
+            <Link to="/distributors">Become a Distributor</Link>
+          </Button>
         </div>
       </section>
     </Layout>
