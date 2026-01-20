@@ -9,9 +9,9 @@ type Category = Product["category"] | "all";
 
 const categories: { id: Category; label: string }[] = [
   { id: "all", label: "All Products" },
-  { id: "fruit-juice", label: "Fruit Juices" },
-  { id: "cold-drinks", label: "Cold Drinks" },
-  { id: "flavored-drinks", label: "Flavored Drinks" },
+  { id: "mossy-drinks", label: "Mossy Drinks" },
+  { id: "cool-drinks", label: "Cool Drinks" },
+  { id: "litchi", label: "Litchi" },
 ];
 
 const Products = () => {
