@@ -11,7 +11,6 @@ const categories: { id: Category; label: string }[] = [
   { id: "all", label: "All Products" },
   { id: "mossy-drinks", label: "Mossy Drinks" },
   { id: "cool-drinks", label: "Cool Drinks" },
-  { id: "litchi", label: "Litchi" },
 ];
 
 const Products = () => {

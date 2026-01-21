@@ -44,23 +44,27 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Hero Image Area */}
-        <div className="absolute right-0 bottom-0 w-1/2 h-full hidden lg:flex items-end justify-center">
-          <div className="relative w-full h-[80%]">
-            <img
-              src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=800&h=1000&fit=crop"
-              alt="Fresh Juices"
-              className="absolute bottom-0 right-20 w-64 h-80 object-cover rounded-3xl shadow-2xl animate-fade-up"
-              style={{ animationDelay: "0.2s" }}
-            />
-            <img
-              src="https://images.unsplash.com/photo-1546173159-315724a31696?w=800&h=1000&fit=crop"
-              alt="Mango Juice"
-              className="absolute bottom-20 right-72 w-56 h-72 object-cover rounded-3xl shadow-2xl animate-fade-up"
-              style={{ animationDelay: "0.4s" }}
-            />
-          </div>
-        </div>
+       {/* Hero Image Area */}
+<div className="absolute right-0 bottom-0 w-1/2 h-full hidden lg:flex items-end justify-center">
+  <div className="relative w-full h-[80%] flex items-end justify-center">
+
+    <img
+      src="/all-drinks.jpg"
+      alt="All Drinks"
+      className="
+        absolute bottom-8 right-24
+        w-[280px] sm:w-[320px] md:w-[360px] lg:w-[380px]
+        h-auto object-contain
+        rounded-3xl shadow-2xl
+        animate-fade-up
+      "
+      style={{ animationDelay: '0.4s' }}
+    />
+
+  </div>
+</div>
+
+
       </section>
 
       {/* Features Section */}
